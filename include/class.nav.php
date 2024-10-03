@@ -153,9 +153,9 @@ class StaffNav {
         foreach($this->getTabs() as $k=>$tab){
             $subnav=array();
             switch(strtolower($k)){
-                case 'tasks':
-                    $subnav[]=array('desc'=>__('Tasks'), 'href'=>'tasks.php', 'iconclass'=>'Ticket', 'droponly'=>true);
-                    break;
+                // case 'tasks':
+                //     $subnav[]=array('desc'=>__('Tasks'), 'href'=>'tasks.php', 'iconclass'=>'Ticket', 'droponly'=>true);
+                //     break;
                 case 'dashboard':
                     $subnav[]=array('desc'=>__('Dashboard'),'href'=>'dashboard.php','iconclass'=>'logs');
                     $subnav[]=array('desc'=>__('Agent Directory'),'href'=>'directory.php','iconclass'=>'teams');
@@ -328,9 +328,8 @@ class UserNav {
             $navs = array();
             $user = $this->user;
             $navs['home']=array('desc'=>__('Support Center Home'),'href'=>'index.php','title'=>'');
-            if($cfg && $cfg->isKnowledgebaseEnabled())
-                $navs['kb']=array('desc'=>__('Knowledgebase'),'href'=>'kb/index.php','title'=>'');
-
+            // if($cfg && $cfg->isKnowledgebaseEnabled())
+            //     $navs['kb']=array('desc'=>__('Knowledgebase'),'href'=>'kb/index.php','title'=>'');
             // Show the "Open New Ticket" link unless BOTH client
             // registration is disabled and client login is required for new
             // tickets. In such a case, creating a ticket would not be
