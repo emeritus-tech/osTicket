@@ -342,7 +342,7 @@ class Format {
 
         // HtmLawed specific config only
         $config = array(
-            'safe' => 1, //Exclude applet, embed, iframe, object and script tags.
+            'safe' => 0, //Exclude applet, embed, iframe, object and script tags.
             'balance' => $options['balance'],
             'comment' => 1, //Remove html comments (OUTLOOK LOVE THEM)
             'tidy' => -1,
