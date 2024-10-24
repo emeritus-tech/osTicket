@@ -380,7 +380,7 @@ class Format {
         $text = Format::safe_html($text, array('spec' => $spec));
 
         //If requested - strip tags with decoding disabled.
-        return $striptags?Format::striptags($text, false):$text;
+        return $striptags?Format::striptags($text, true):$text;
     }
 
     static function htmlchars($var, $sanitize = false) {
